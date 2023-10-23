@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Passions+Conflict&family=Red+Hat+Display&family=Sacramento&display=swap');
+       </style>
+    <title>task4</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+           
+        }
+        nav ul li{
+    list-style: none;
+    font-size: 1.3rem;
+ }
+        nav ul {
+        display: flex;
+    font-family: 'Barriecito', cursive;
+font-family: 'Borel', cursive;
+font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Mukta', sans-serif;
+
+        }
+        nav ul li a{
+    color: rgb(49, 48, 48);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+        }
+        #logo img{
+            padding: 2px 2px;
+            margin: 2px 2px;
+            width: 123px;
+            display: block;
+            padding-left: 0%;
+
+        }
+        .home #mega h2{
+            text-align: right;
+            padding-right: 323px;
+            font-size: 50px;
+            padding-top: 73px;
+            padding-bottom: 2px;
+            margin-bottom: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(241, 111, 172);
+        }
+       .home #SALES h1{
+        text-align: right;
+        padding-right:200px;
+        font-size: 70px;
+        padding-top: 2px;
+        margin-top: 2px;
+        color: rgb(241, 241, 100);
+       }
+       .home #p p{
+        display: block;
+        text-align: right;
+       padding-right: 200px;
+        margin-left: 500px;
+        padding-left: 250px;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+       
+
+       }
+       .header{
+        background-image: url('https://images.ctfassets.net/rxqefefl3t5b/6I2vL9f0IVsDQ8qFgdrxH7/7660c4bab3116a4a04025d5c4802efa5/Virgin-Red-online-shopping-offers.jpg?fl=progressive&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .home form {
+        padding-left: 1000px;
+        padding-top: 2px;
+        padding-bottom: 20px;}
+        .home form button{
+        border-radius: 17px;
+        font-size: medium;
+        color: rgb(36, 37, 37);
+        padding: 4px 4px 4px 4px;
+        cursor: pointer;
+        background-color: gray;
+       }
+       .product .img{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+            background-color: rgb(160, 159, 159);
+            justify-content: space-evenly;
+        }
+        .product #img1 img{
+            width: 283px;
+            margin-right: 23px;
+            height: 250px;
+        }
+        .product #img3 img{
+            width: 290px;
+            height: 253px;
+            margin-right: 23px;
+        }
+        .product #img2 img{
+            width: 290px;
+            margin-right: 23px;
+            height: 250px;
+        }
+        .product #img4 img{
+           width: 290px;
+            margin-right: 23px;
+            height: 250px;
+           
+        }
+        .shop #img1 img{
+            width: 1328px;
+            margin-right: 23px;
+            height: 400px;
+        }
+        .shop #img2 img{
+            padding-top: 23px;
+            width: 300px;
+            margin-right: 23px;
+            height: 300px;
+        }
+        .shop #img3 img{
+            padding-top: 23px;
+            width: 300px;
+            margin-right: 23px;
+            height: 300px;
+        }
+       .shop .hoodie{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+            background-color: rgb(160, 159, 159);
+            justify-content: space-evenly;
+           
+        }
+        .shop #img4 img{
+            padding-top: 23px;
+            width: 300px;
+            margin-right: 23px;
+            height: 300px;
+        }
+        .shop #img5 img{
+            padding-top: 23px;
+            width: 300px;
+            margin-right: 23px;
+            height: 300px;
+        }
+        .shop #img6 img{
+            padding-top: 23px;
+            width: 300px;
+            margin-right: 23px;
+            height: 300px;
+        }
+        .shop #img7 img{
+            padding-top: 23px;
+            width: 300px;
+            margin-right: 23px;
+            height: 300px;
+        }
+        .shop .kurta{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+            background-color: rgb(153, 152, 152);
+            justify-content: space-evenly;
+           
+        }
+        .shop #img8 img{
+            padding-top: 23px;
+            cursor: pointer;
+            width: 300px;
+            margin-right: 23px;
+            height: 300px;
+        }
+        .shop #img9 img{
+            padding-top: 23px;
+            width: 300px;
+            margin-right: 23px;
+            height: 300px;
+        }
+      
+      .contact{
+        width: 100%;
+        height: 580px;
+       border: 3px solid rgb(78, 176, 233);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 60px;
+    }
+    .contact p{
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .contact .button-2{
+        background-color: rgb(63, 199, 209);
+        color: white;
+        border: 2px solid transparent;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 9px 22px;
+        transition: .4s; 
+        margin-top: 90px;
+    }
+    .contact .button-2:hover{
+        background-color: transparent;
+        border: 1px solid rgb(53, 99, 224);
+        cursor: pointer;
+    }
+
+    input[type="text"],input[type="email"],input[type="subject"], textarea{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 2px solid rgb(41, 77, 177);
+        border-radius: 5px;
+    }
+    label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        padding-top: 5px;
+        color: aliceblue;
+    }
+    .form{
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+    }
+    .form button{
+       background-color: rgb(150, 150, 223);
+       margin-left: 270px;
+    }
+.form .button-2{
+    margin-top: 90px;
+}
+ .contact hr{
+    color: gray;
+}
+.footer{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social{
+        display: flex;
+        margin-top: 34px;
+    }
+    .social a{
+        margin-top: 73px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(167, 161, 161);
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+     .footer #end{
+        margin-bottom: 23px;
+    }
+   .color
+   {
+    background-color: grey;
+   }
+   .social a:hover{
+        transform: scale(1.2);
+        transition: .3s;
+    }
+    form button{
+        cursor: pointer;
+    }
+    .contact{
+        background-color: grey;
+    }
+.footer{
+    background-color: rgb(92, 116, 136);
+}
+    </style>
+</head>
+<body>
+    <div class="color">
+    <div class="header">
+        <nav>
+            <nav id="logo">
+                <img src="https://cdn.dribbble.com/users/56040/screenshots/327380/eshop.png" alt="">
+            </nav>
+           
+            <ul>
+             <li><a href="#home">Home</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                
+            </ul>
+           
+           
+        </nav>
+    <section id="home">
+        <div class="home">
+            <div id="mega">
+                <h2>MEGA</h2>
+            </div>
+            <div id="SALES">
+                <h1>SALE</h1>
+            </div>
+    
+        <div id="p">
+        <p>Happy New Month!
+            May this new month bring you lots of pleasantness.
+            A million cheers to all our esteemed customers. We cherish you, and thanks for still believing in us.
+            We promise to update you soon on our products.</p>
+        </div>
+        <form action="">
+            <button>Shop Now</button>
+        </form>
+    </div>
+    </div>
+</section>
+<section id="product">
+    <div class="product">
+    <h1>NEW PRODUCTS</h1>
+    <div class="img">
+    <div id="img1">
+     <img src="https://edgycart.shop/cdn/shop/files/fx4.jpg?v=1689325455&width=1946" alt="">
+     <p>green frock wear</p>
+     <h2>19$</h2>
+
+    </div>
+     <div id="img2">
+        <img src="https://www.snowfashionshop.com/image/snowfashionshop/image/data/all_product_images/product-9134/HSszYAbu1599539598.jpg" alt="">
+        <p>casual men wear</p>
+        <h2>18$</h2>
+     </div>
+     <div id="img3">
+       <img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/72/860/XL_p0195586072.jpg" alt="">
+       <p>skinbrowish frock</p>
+       <h2>20$</h2>
+     </div>
+     <div id="img4">
+        <img src="https://i.pinimg.com/564x/87/92/1a/87921a50444ff611a1cc76c9b4aa93a0.jpg" alt="">
+        <p>streetwear mens outfit</p>
+        <h2>23$</h2>
+     </div>
+     </div>
+    </section>
+    <section id="shop">
+     <div class="shop">
+     <div class="cloth">
+      
+        <div id="img1">
+            <img src="https://img.freepik.com/free-vector/floral-sale-banner-with-photo-hand-drawn-flowers_1188-304.jpg" alt="">
+
+        </div>
+        
+        <h1>Hoodie Collection</h1>
+        <div class="hoodie">
+        <div id="img2">
+            <img src="https://www.sclothers.com/cdn/shop/products/2_53d3ec9c-2645-4887-9338-6ee4d67c4f51.jpg?v=1693580297&width=720" alt="">
+            <p>You Are Enough Sweatshirt - W22 - WSW0033</p>
+            <h2>12$</h2>
+
+        </div>
+        <div id="img3">
+            <img src="https://pvh-brands.imgix.net/catalog/product/media/WW0WW27885_BDS_MO-TP-F1_005.jpg?w=713&h=950&crop=edges&fit=crop&auto=compress&auto=format" alt="">
+            <p>Black white-Color Hoodie - W22 - UH0012R</p>
+            <h2>10$</h2>
+        </div>
+        <div id="img4">
+            <img src="https://www.sclothers.com/cdn/shop/products/1a_501250a9-d3ad-41d6-b42f-f2abc33ade2a.jpg?v=1665079667&width=1800" alt="">
+            <p>Teal & Green Raglan Sweatshirt - W22 - USW</p>
+            <h2>13$</h2>
+
+        </div>
+        <div id="img5">
+            <img src="https://elevatedfaith.com/cdn/shop/products/We_re-in-this-Together-Unisex-Hoodie_01_620x.jpg?v=1667939166" alt="">
+            <p>We're in this together white hoodie</p>
+            <h2>17$</h2>
+        </div>
+        </div>
+        <h1>New Kurta Collection</h1>
+        <div class="kurta">
+           
+            <div id="img6">
+                <img src="https://www.sclothers.com/cdn/shop/products/2_33_a74d2d77-1642-4858-be40-b83e4dde4375.jpg?v=1674228388&width=1800" alt="">
+                <p>white kurta</p>
+                <h2>10$</h2>
+            </div>
+            <div id="img7">
+                <img src="https://cdn.shopify.com/s/files/1/1592/0041/products/0PRESG23V318_1.jpg?v=1679398948&width=600" alt="">
+                <p>navy blue kurta</p>
+                <h2>12$</h2>
+            </div>
+            <div id="img8">
+                <img src="https://www.lalaland.pk/storage/products/medium/9587_770597232505051618310515.jpg" alt="">
+                <p>light greenish kurta</p>
+                <h2>11$</h2>
+            </div>
+            <div id="img9">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/ethnic-set/z/p/x/l-kido-see-green-cmd-l-gosriki-original-imagqsfnqfgznxmu.jpeg?q=20" alt="">
+                <p>blue kurta</p>
+                <h2>14$</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+<section id="contact">
+    <div class="contact">
+        <hr>
+      <h1>Contact Us</h1>
+      
+    <div class="form">
+       
+        <form action="">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required placeholder="Enter Your Name">
+            
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" required placeholder="Enter Your Email">
+
+            <label for="subject">Subject: </label>
+            <input type="subject" name="subject" id="subject" required placeholder="Your Subject">
+
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" required placeholder="Your Message"></textarea>
+           
+            <button type="submit">Submit</button><br>
+            <a class="button-2" href="#">Shop now</a> <br>
+
+        </form>
+    </div>
+</section>
+    </div>
+
+    <div class="footer">
+    <div class="social">
+        <a href="https://www.facebook.com/settings?tab=account&section=username"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/invites/contact/?i=15twtyam847p5&utm_content=cdfxhfo"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+    </div>
+    <p id="end">Copyright by Amna khan</p>
+    </div>
+</div>
+
+    
+      
+    
+</body>
+</html>
